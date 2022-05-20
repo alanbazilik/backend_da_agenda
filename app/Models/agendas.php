@@ -8,7 +8,7 @@ class agendas extends Model{
     protected $fillable = [
         'nome',
         'email',
-        'contato',
+        'telefone',
         'messagem',
         
     ];

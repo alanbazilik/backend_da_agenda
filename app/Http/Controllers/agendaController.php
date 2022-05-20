@@ -11,7 +11,7 @@ class  agendaController extends Controller
     }
 
     public function store(Request $request){
-        return $request;
+        
         return agendas::create([
             'nome' => $request->nome,
             'email' => $request->email,
@@ -29,3 +29,9 @@ class  agendaController extends Controller
     }
 }
 
+agendas::create(['nome' => "alan",
+    'email' =>"fcbazilik@gmail.com",
+    'telefone' =>"telefone",
+    'messagem' =>"enviar messagem"
+   
+]);

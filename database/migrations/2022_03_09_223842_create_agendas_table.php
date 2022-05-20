@@ -16,7 +16,7 @@ class CreateagendasTable extends Migration
         Schema::create('Agendas', function (Blueprint $table) {
             $table->id();
             $table->string('nome');
-            $table->float('email');
+            $table->string('email');
             $table->string('telefone');
             $table->string('messagem');
      
