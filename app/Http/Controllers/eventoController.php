@@ -14,9 +14,9 @@ class  eventoController extends Controller
     public function store(Request $request){
        
         return Eventos::create([
-            'nome_eventos' => $request->nome_eventos,
-            'Data' => $request->data,
-            'Hora' => $request->hora,
+            'nome_evento' => $request->nome_eventos,
+            'Data' => $request->Data,
+            'Hora' => $request->Hora,
             'messagem' => $request->messagem
            
         ]);
