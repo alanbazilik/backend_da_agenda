@@ -29,9 +29,3 @@ class  agendaController extends Controller
     }
 }
 
-agendas::create(['nome' => "alan",
-    'email' =>"fcbazilik@gmail.com",
-    'telefone' =>"telefone",
-    'messagem' =>"enviar messagem"
-   
-]);

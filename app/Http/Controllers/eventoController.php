@@ -12,7 +12,7 @@ class  eventoController extends Controller
     }
 
     public function store(Request $request){
-        return $request;
+       
         return Eventos::create([
             'nome_eventos' => $request->nome_eventos,
             'Data' => $request->data,

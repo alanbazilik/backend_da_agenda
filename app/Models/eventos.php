@@ -7,8 +7,8 @@ class eventos extends Model
 {
     protected $fillable = [
         'nome_evento',
-        'data',
-        'hora',
+        'Data',
+        'Hora',
         'messagem',
         
     ];
