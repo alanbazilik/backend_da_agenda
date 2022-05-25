@@ -12,11 +12,12 @@ class avalicaoController extends Controller
     }
 
     public function store(Request $request){
-        
+
         return avalicao::create([
             'nome' => $request->nome,
-            'messagem' => $request->messagem
-           
+            'messagem' => $request->messagem,
+            'nota' => $request->nota
+            
         ]);
     }
 

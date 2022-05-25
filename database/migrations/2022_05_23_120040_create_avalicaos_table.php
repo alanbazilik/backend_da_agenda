@@ -17,6 +17,7 @@ class CreateAvalicaosTable extends Migration
             $table->id();
             $table->string('nome');
             $table->string('messagem');
+            $table->decimal('nota');
             $table->timestamps();
         });
     }

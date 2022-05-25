@@ -9,7 +9,8 @@ class avalicao extends Model
 {
     protected $fillable = [
         'nome',
-        'messagem'
+        'messagem',
+        'nota'
         
     ];
 }
