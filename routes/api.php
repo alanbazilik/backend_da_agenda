@@ -24,3 +24,5 @@ Route::get('Eventos', ['App\Http\Controllers\eventoController', 'index']);
 Route::post('evento', ['App\Http\Controllers\eventoController', 'store']);
 Route::get('Avaliar', ['App\Http\Controllers\avalicaoController', 'index']);
 Route::post('avaliar', ['App\Http\Controllers\avalicaoController', 'store']);
+Route::put('Avaliar', ['App\Http\Controllers\avalicaoController', 'edit']);
+Route::delete('Avaliar', ['App\Http\Controllers\avalicaoController', 'delete']);

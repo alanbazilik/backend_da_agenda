@@ -20,7 +20,17 @@ class  agendaController extends Controller
            
         ]);
     }
-
+    public function edit($id) 
+    {
+        return agendas::update([
+            'id' => $request->id,
+            'nome' => $request->nome,
+            'email' => $request->email,
+            'telefone' => $request->telefone,
+            'messagem' => $request->messagem
+           
+        ]);
+    }
     public function show(Request $request, agendas $agendas){
         return $agendas;
     } 
