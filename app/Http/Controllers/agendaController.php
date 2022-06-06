@@ -22,14 +22,20 @@ class  agendaController extends Controller
     }
     public function edit($id) 
     {
-        return agendas::update([
-            'id' => $request->id,
+        $request = agendas::findOrFail($id);
+        return view('agendas.edit', ['agendas' => $request]);
+    }
+    public function update(Request $request, $id)
+    {
+        $request = agendas::findOrFail($id);
+        $request->update([
             'nome' => $request->nome,
             'email' => $request->email,
             'telefone' => $request->telefone,
             'messagem' => $request->messagem
-           
         ]);
+        return redirect('agendas salvar');
+
     }
     public function show(Request $request, agendas $agendas){
         return $agendas;
