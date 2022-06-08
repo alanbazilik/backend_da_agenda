@@ -28,7 +28,5 @@ Route::post('avaliar', ['App\Http\Controllers\avalicaoController', 'store']);
 Route::put('Agendas', ['App\Http\Controllers\avalicaoController', 'edit']);
 Route::delete('agenda', ['App\Http\Controllers\avalicaoController', 'delete']);
 Route::post('login', ['App\Http\Controllers\Auth\LoginController']);
-Route::post('register',['App\Http\Controllers\Auth\RegisterController']);
-Route::post('logout', ['App\Http\Controllers\Auth\ForgotPassword']);
-
+Route::get('register',['App\Http\Controllers\Auth\RegisterController']);
 
